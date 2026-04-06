@@ -1,0 +1,6 @@
+{
+  "custom": {
+    "extra_instructions": "texto libre con instrucciones adicionales",
+    "welcome_message": "mensaje de bienvenida personalizado"
+  }
+}

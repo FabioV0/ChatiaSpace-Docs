@@ -1,0 +1,19 @@
+{
+  "services": {
+    "use_cases": [
+      { "sector": "Limpieza dental", "value": "Eliminación de sarro y pulido con ultrasonido" },
+      { "sector": "Blanqueamiento", "value": "Blanqueamiento dental en consulta con resultados inmediatos" },
+      { "sector": "Ortodoncia", "value": "Valoración gratuita para brackets o alineadores invisibles" }
+    ],
+    "solutions": {
+      "recordatorios": "Enviamos recordatorios automáticos 24 horas antes de la cita",
+      "ficha_tecnica": "Recopilamos ficha médica antes de la primera cita"
+    },
+    "sales_flow": ["saludo", "escuchar_sintoma", "recomendar_servicio", "dar_precio_si_pregunta", "agendar_cita"],
+    "price_rule": "Solo dar precios si el cliente los pide explícitamente. Primero enfocar en el diagnóstico.",
+    "follow_up": {
+      "abandon_minutes": 60,
+      "max_attempts": 3
+    }
+  }
+}

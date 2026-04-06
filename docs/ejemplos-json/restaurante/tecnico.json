@@ -1,0 +1,17 @@
+{
+  "technical": {
+    "ui_components": {
+      "welcome_buttons": ["Reservar mesa 🍽️", "Menú del día 📋", "Promociones 🎁"],
+      "pricing_buttons": ["Ver precios 💰", "Platos especiales 🌟"],
+      "confirmation_buttons": ["Confirmar reserva ✅", "Cambiar horario ⏰"]
+    },
+    "data_routing": {
+      "Reservas": "nuevo",
+      "Clientes_frecuentes": "actualizar"
+    },
+    "calendar_rules": {
+      "must_check_availability": true,
+      "natural_dates_example": "Usa 'Este viernes a las 8 PM'"
+    }
+  }
+}

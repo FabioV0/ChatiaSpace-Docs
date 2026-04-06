@@ -1,0 +1,10 @@
+{
+  "communication": {
+    "tone": "adjetivo (profesional, cercano, divertido, formal, empático)",
+    "humanity_fillers": ["frase1", "frase2", "frase3"],
+    "forbidden_words": ["palabra1", "palabra2", "palabra3"],
+    "preferred_words": ["palabra1", "palabra2"],
+    "emojis": "poco | moderado | mucho",
+    "line_breaks": true
+  }
+}

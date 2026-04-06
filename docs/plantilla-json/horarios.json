@@ -1,0 +1,17 @@
+{
+  "schedule": {
+    "timezone": "America/Bogota",
+    "hours": {
+      "monday": ["hora_inicio", "hora_fin"],
+      "tuesday": ["08:00", "17:00"],
+      "wednesday": [],
+      "thursday": [],
+      "friday": [],
+      "saturday": [],
+      "sunday": []
+    },
+    "min_advance_hours": 1,
+    "duration_minutes": 60,
+    "unavailable_days": ["sunday", "2026-12-25"]
+  }
+}

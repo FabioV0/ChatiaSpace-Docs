@@ -1,0 +1,17 @@
+{
+  "technical": {
+    "ui_components": {
+      "welcome_buttons": ["Agendar cita 📅", "Tratamientos 🦷", "Preguntas frecuentes ❓"],
+      "pricing_buttons": ["Ver precios 💰", "Promociones 🎁"],
+      "confirmation_buttons": ["Confirmar ✅", "Reprogramar 🔄", "Cancelar ✖️"]
+    },
+    "data_routing": {
+      "Pagos": "nuevo",
+      "Pacientes": "actualizar"
+    },
+    "calendar_rules": {
+      "must_check_availability": true,
+      "natural_dates_example": "Usa 'Este miércoles a las 10 AM'"
+    }
+  }
+}
