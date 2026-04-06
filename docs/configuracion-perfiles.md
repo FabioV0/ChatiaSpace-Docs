@@ -1,18 +1,21 @@
-# 📘 Configuración de perfiles de cliente para ChatIA Space
+}# Configuración de perfiles de cliente para ChatIA Space
 
 Este documento define la estructura de los archivos JSON que debe tener cada cliente del sistema **ChatIA Space**. Un asistente de IA (ChatGPT, Claude, Groq, etc.) debe usar esta especificación para generar automáticamente los JSON a partir de una descripción del negocio.
 
-## ⚠️ Separación entre configuración estática y datos dinámicos
+## Separación entre configuración estática y datos dinámicos
 
 - **Los archivos JSON** de esta carpeta definen la **personalidad, reglas de negocio y comportamiento** del asistente. No cambian frecuentemente.
-- **La información dinámica** (precios, servicios concretos, productos, promociones, inventario, horarios especiales) se almacena en **Google Sheets (Excel)** y se sincroniza automáticamente. El asistente la consulta en tiempo real a través de `database.json`.
-- **Para actualizar precios o servicios**, el cliente (o administrador) solo edita la hoja de Excel; **no necesita tocar los JSON**.
+- La información dinámica (precios, servicios concretos, productos, promociones, inventario, horarios especiales) se almacena en **Google Sheets (Excel)** y se sincroniza automáticamente. El asistente la consulta en tiempo real a través de `database.json`.
+- Para actualizar precios o servicios, el cliente (o administrador) solo edita la hoja de Excel; **no necesita tocar los JSON**.
 
-## Archivos requeridos (carpeta `clients/{client_id}/`)
+---
+
+## Archivos requeridos (carpeta `clients/{client_id}`)
 
 Todos los archivos deben estar en formato UTF-8 y seguir la estructura exacta que se muestra. Los campos opcionales pueden omitirse o dejarse vacíos.
 
 ### 1. `perfil.json`
+
 Identidad del negocio y del asistente virtual.
 
 ```json
@@ -128,9 +131,3 @@ Ejemplo de entrada para la IA
 
 Instrucción final para la IA generadora
 Con base en la información proporcionada por el usuario, genera los archivos JSON completos: perfil.json, comunicacion.json, sabiduria_negocio.json, tecnico_y_datos.json, ventas_y_flujos.json. Si falta algún dato, usa valores por defecto razonables. No incluyas precios ni servicios concretos en los JSON; esos irán al Excel. Devuelve solo los JSON, cada uno en un bloque de código separado, con el nombre del archivo como título.
-
-text
-
----
-
-**Copia todo este bloque** (desde `# 📘 Configuración...` hasta el final) y pégalo en tu archivo `configuracion-perfiles.md`. Ya está listo para usar.
