@@ -27,9 +27,6 @@ Identidad del negocio y del asistente virtual.
     "essence": "frase que describe la personalidad del asistente (máx 200 caracteres)"
   }
 }
-
--------------------------------------------------------------------
-
 2. comunicacion.json
 Tono, palabras permitidas/prohibidas y formato de las respuestas.
 
@@ -44,9 +41,6 @@ json
     "line_breaks": true
   }
 }
-
--------------------------------------------------------------------
-
 3. sabiduria_negocio.json
 Casos de uso y soluciones típicas que ofrece el negocio (sin precios ni datos concretos).
 
@@ -59,9 +53,6 @@ json
     "nombre_tarea": "descripción de la solución"
   }
 }
-
--------------------------------------------------------------------
-
 4. tecnico_y_datos.json
 Configuración de interfaz, enrutamiento de datos, reglas de calendario y políticas de registro.
 
@@ -91,9 +82,6 @@ json
     "log_policy": "Registrar solo datos nuevos o interés de compra. No para charla trivial."
   }
 }
-
--------------------------------------------------------------------
-
 5. ventas_y_flujos.json
 Flujo de ventas, reglas de precios, seguimiento y simulación.
 
@@ -110,9 +98,6 @@ json
   },
   "simulation_mode": {}
 }
-
--------------------------------------------------------------------
-
 6. personalizacion.json (opcional)
 Reglas muy específicas o mensajes personalizados.
 
@@ -123,9 +108,6 @@ json
     "welcome_message": "mensaje de bienvenida personalizado"
   }
 }
-
--------------------------------------------------------------------
-
 Información mínima necesaria para generar los JSON
 Para crear los archivos de un cliente, la IA debe recibir al menos lo siguiente (en cualquier formato, en lenguaje natural):
 
@@ -147,11 +129,8 @@ Ejemplo de entrada para la IA
 Instrucción final para la IA generadora
 Con base en la información proporcionada por el usuario, genera los archivos JSON completos: perfil.json, comunicacion.json, sabiduria_negocio.json, tecnico_y_datos.json, ventas_y_flujos.json. Si falta algún dato, usa valores por defecto razonables. No incluyas precios ni servicios concretos en los JSON; esos irán al Excel. Devuelve solo los JSON, cada uno en un bloque de código separado, con el nombre del archivo como título.
 
-
--------------------------------------------------------------------
-
 text
 
 ---
 
-Este archivo ya está **alineado con tus nombres reales**, separa correctamente lo estático de lo dinámico, y da instrucciones claras para que una IA genere perfiles de cualquier negocio. Solo reemplaza tu `configuracion-perfiles.md` actual con este contenido.
+**Copia todo este bloque** (desde `# 📘 Configuración...` hasta el final) y pégalo en tu archivo `configuracion-perfiles.md`. Ya está listo para usar.
