@@ -1,4 +1,4 @@
-}# Configuración de perfiles de cliente para ChatIA Space
+# Configuración de perfiles de cliente para ChatIA Space
 
 Este documento define la estructura de los archivos JSON que debe tener cada cliente del sistema **ChatIA Space**. Un asistente de IA (ChatGPT, Claude, Groq, etc.) debe usar esta especificación para generar automáticamente los JSON a partir de una descripción del negocio.
 
@@ -128,23 +128,21 @@ Reglas muy específicas o mensajes personalizados.
 }
 ```
 
-Información mínima necesaria para generar los JSON
+## Información mínima necesaria para generar los JSON
+
 Para crear los archivos de un cliente, la IA debe recibir al menos lo siguiente (en cualquier formato, en lenguaje natural):
 
-Nombre del negocio y rubro (educación, salud, restaurante, taller, etc.).
+1. **Nombre del negocio** y **rubro** (educación, salud, restaurante, taller, etc.).
+2. **Nombre del asistente virtual** (ej. "Lucy", "Ana", "Sofía") y **personalidad** (ej. "amable y organizada", "profesional pero cercana").
+3. **Horarios de atención** para citas o reservas (días y rangos horarios). Si no aplican citas, indicarlo.
+4. **Qué servicios o productos ofrece** el negocio (al menos 2 o 3 ejemplos). **Estos son solo ejemplos descriptivos, no datos dinámicos.** Los precios y listas concretas irán al Excel.
+5. **Reglas de venta** (ej. "no dar precios sin que pregunten", "siempre preguntar el nombre antes de agendar").
+6. **Frases típicas** que le gustaría usar (opcional, pero ayuda a definir el tono).
 
-Nombre del asistente virtual (ej. "Lucy", "Ana", "Sofía") y personalidad (ej. "amable y organizada", "profesional pero cercana").
+## Ejemplo de entrada para la IA
 
-Horarios de atención para citas o reservas (días y rangos horarios). Si no aplican citas, indicarlo.
+> "Genera los JSON para una clínica dental llamada 'Sonrisa Perfecta'. La asistente se llama 'Dra. Laura', es empática y profesional. Atienden lunes a viernes de 8am a 6pm, sábados de 9am a 1pm. Los servicios: limpieza, blanqueamiento, ortodoncia. Las citas duran 45 minutos. Regla de venta: dar precios solo si el cliente pregunta. Frases típicas: 'Tu salud dental es importante para nosotros'."
 
-Qué servicios o productos ofrece el negocio (al menos 2 o 3 ejemplos). Estos son solo ejemplos descriptivos, no datos dinámicos. Los precios y listas concretas irán al Excel.
+## Instrucción final para la IA generadora
 
-Reglas de venta (ej. "no dar precios sin que pregunten", "siempre preguntar el nombre antes de agendar").
-
-Frases típicas que le gustaría usar (opcional, pero ayuda a definir el tono).
-
-Ejemplo de entrada para la IA
-"Genera los JSON para una clínica dental llamada 'Sonrisa Perfecta'. La asistente se llama 'Dra. Laura', es empática y profesional. Atienden lunes a viernes de 8am a 6pm, sábados de 9am a 1pm. Los servicios: limpieza, blanqueamiento, ortodoncia. Las citas duran 45 minutos. Regla de venta: dar precios solo si el cliente pregunta. Frases típicas: 'Tu salud dental es importante para nosotros'."
-
-Instrucción final para la IA generadora
-Con base en la información proporcionada por el usuario, genera los archivos JSON completos: perfil.json, comunicacion.json, sabiduria_negocio.json, tecnico_y_datos.json, ventas_y_flujos.json. Si falta algún dato, usa valores por defecto razonables. No incluyas precios ni servicios concretos en los JSON; esos irán al Excel. Devuelve solo los JSON, cada uno en un bloque de código separado, con el nombre del archivo como título.
+> Con base en la información proporcionada por el usuario, genera los archivos JSON completos: `perfil.json`, `comunicacion.json`, `sabiduria_negocio.json`, `tecnico_y_datos.json`, `ventas_y_flujos.json`. Si falta algún dato, usa valores por defecto razonables. **No incluyas precios ni servicios concretos en los JSON**; esos irán al Excel. Devuelve solo los JSON, cada uno en un bloque de código separado, con el nombre del archivo como título.
