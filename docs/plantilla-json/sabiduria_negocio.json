@@ -1,0 +1,8 @@
+{
+  "use_cases": [
+    { "sector": "nombre del segmento", "value": "beneficio o solución" }
+  ],
+  "repetitive_tasks_solutions": {
+    "nombre_tarea": "descripción de la solución"
+  }
+}

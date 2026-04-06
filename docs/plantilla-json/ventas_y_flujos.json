@@ -1,0 +1,12 @@
+{
+  "sales_protocol": {
+    "flow_order": ["paso1", "paso2", "paso3", "paso4", "paso5"],
+    "price_rule": "regla sobre cuándo y cómo dar precios",
+    "sales_instinct": "comportamiento ante interés del cliente"
+  },
+  "follow_up_logic": {
+    "abandonment_minutes": 30,
+    "max_attempts": 3
+  },
+  "simulation_mode": {}
+}

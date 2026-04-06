@@ -1,0 +1,25 @@
+{
+  "technical": {
+    "ui": {
+      "welcome_buttons": ["opción1", "opción2", "opción3"],
+      "pricing_buttons": ["plan1", "plan2"],
+      "confirmation_buttons": ["Confirmar ✅", "Cambiar ✏️"],
+      "confirmation_phrases": ["¿te parece bien?", "¿confirmamos?"],
+      "whatsapp_buttons": {
+        "yes_text": "Confirmar ahora ✅",
+        "no_text": "Cancelar ✂️",
+        "change_text": "Hacer un cambio ✏️"
+      }
+    },
+    "data_routing": {
+      "Billetera": "nuevo",
+      "Seguimiento": "actualizar"
+    },
+    "calendar_rules": {
+      "must_check_availability": true,
+      "hours": "texto legible con los horarios de atención",
+      "natural_dates_example": "Usa 'Este miércoles a las 4 PM'"
+    },
+    "log_policy": "Registrar solo datos nuevos o interés de compra. No para charla trivial."
+  }
+}
