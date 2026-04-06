@@ -4,9 +4,7 @@ Bienvenido a la documentación del sistema **ChatIA Space**, un SaaS multi-tenan
 
 ## 📘 Contenido
 
-- [Configuración de perfiles de cliente](docs/configuracion-perfiles.md) – Estructura de JSON, ejemplos, y guía para generarlos con IA.
-- [Plantilla de Json](docs/plantillas.json/) – Perfiles listos para usar (colegio, restaurante, clínica, etc.)
-- [Guía del prompt builder](docs/prompt-builder-guia.md) – Cómo funciona el sistema de prompts neutro.
+- [Configuración de perfiles de cliente](docs/configuracion-perfiles.md) – Estructura de JSON, y guía para generarlos con IA.
 
 ---
 
