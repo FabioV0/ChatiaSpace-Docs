@@ -1,4 +1,4 @@
-}# Configuración de perfiles de cliente para ChatIA Space
+# Configuración de perfiles de cliente para ChatIA Space
 
 Este documento define la estructura de los archivos JSON que debe tener cada cliente del sistema **ChatIA Space**. Un asistente de IA (ChatGPT, Claude, Groq, etc.) debe usar esta especificación para generar automáticamente los JSON a partir de una descripción del negocio.
 
