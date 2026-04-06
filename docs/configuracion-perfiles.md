@@ -1,4 +1,4 @@
-# Configuración de perfiles de cliente para ChatIA Space
+}# Configuración de perfiles de cliente para ChatIA Space
 
 Este documento define la estructura de los archivos JSON que debe tener cada cliente del sistema **ChatIA Space**. Un asistente de IA (ChatGPT, Claude, Groq, etc.) debe usar esta especificación para generar automáticamente los JSON a partir de una descripción del negocio.
 
@@ -30,10 +30,12 @@ Identidad del negocio y del asistente virtual.
     "essence": "frase que describe la personalidad del asistente (máx 200 caracteres)"
   }
 }
-2. comunicacion.json
+```
+### 2. `comunicacion.json`
+
 Tono, palabras permitidas/prohibidas y formato de las respuestas.
 
-json
+```json
 {
   "communication": {
     "tone": "adjetivo (profesional, cercano, divertido, formal, empático)",
@@ -44,10 +46,13 @@ json
     "line_breaks": true
   }
 }
-3. sabiduria_negocio.json
+```
+
+### 3. `sabiduria_negocio.json`
+
 Casos de uso y soluciones típicas que ofrece el negocio (sin precios ni datos concretos).
 
-json
+```json
 {
   "use_cases": [
     { "sector": "nombre del segmento", "value": "beneficio o solución" }
@@ -56,10 +61,13 @@ json
     "nombre_tarea": "descripción de la solución"
   }
 }
-4. tecnico_y_datos.json
+```
+
+### 4. `tecnico_y_datos.json`
+
 Configuración de interfaz, enrutamiento de datos, reglas de calendario y políticas de registro.
 
-json
+```json
 {
   "technical": {
     "ui": {
@@ -85,10 +93,13 @@ json
     "log_policy": "Registrar solo datos nuevos o interés de compra. No para charla trivial."
   }
 }
-5. ventas_y_flujos.json
+```
+
+### 5. `ventas_y_flujos.json`
+
 Flujo de ventas, reglas de precios, seguimiento y simulación.
 
-json
+```json
 {
   "sales_protocol": {
     "flow_order": ["paso1", "paso2", "paso3", "paso4", "paso5"],
@@ -101,16 +112,22 @@ json
   },
   "simulation_mode": {}
 }
-6. personalizacion.json (opcional)
+```
+
+
+### 6. `personalizacion.json (opcional)`
+
 Reglas muy específicas o mensajes personalizados.
 
-json
+```json
 {
   "custom": {
     "extra_instructions": "texto libre con instrucciones adicionales",
     "welcome_message": "mensaje de bienvenida personalizado"
   }
 }
+```
+
 Información mínima necesaria para generar los JSON
 Para crear los archivos de un cliente, la IA debe recibir al menos lo siguiente (en cualquier formato, en lenguaje natural):
 
